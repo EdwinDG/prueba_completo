@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form name="calculadora">
+        <table>
+            <tr>
+                <td colspan="5"><input type="texto" name="cld" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onClick="document.calculadora.cld.value+='1'"></td>
+                <td><input type="button" value="2" onClick="document.calculadora.cld.value+='2'"></td>
+                <td><input type="button" value="3" onClick="document.calculadora.cld.value+='3'"></td>
+                <td><input type="button" value="+" onClick="document.calculadora.cld.value+='+'"></td>
+                <td><input type="button" value="-" onClick="document.calculadora.cld.value+='-'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onClick="document.calculadora.cld.value+='4'"></td>
+                <td><input type="button" value="5" onClick="document.calculadora.cld.value+='5'"></td>
+                <td><input type="button" value="6" onClick="document.calculadora.cld.value+='6'"></td>
+                <td><input type="button" value="*" onClick="document.calculadora.cld.value+='*'"></td>
+                <td><input type="button" value="/" onClick="document.calculadora.cld.value+='/'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onClick="document.calculadora.cld.value+='7'"></td>
+                <td><input type="button" value="8" onClick="document.calculadora.cld.value+='8'"></td>
+                <td><input type="button" value="9" onClick="document.calculadora.cld.value+='9'"></td>
+                <td><input type="button" value="√" onClick="calculateSquareRoot()"></td>
+                <td><input type="button" value="^" onClick="calculatePower()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onClick="document.calculadora.cld.value+='0'"></td>
+                <td><input type="button" value="." onClick="document.calculadora.cld.value+='.'"></td>
+                <td><input type="reset" value="c"></td>
+                <td colspan="2"><input type="button" value="=" onClick="document.calculadora.cld.value=eval(document.calculadora.cld.value)"></td>
+            </tr>
+        </table>
+    </form>
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(103, 102, 102);
+}
+main{
+    margin-top: 5px;
+    border:50%;
+}
+
+.calendario{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-evenly;
+    
+}
+
+.mes{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px ;
+}
+
+.mes h1{
+    background-color: rgb(252, 89, 89);
+    padding: 9%;
+    color: rgb(255, 255, 255);
+    border-radius: 10px 10px 0 0;
+}
+
+.rayas{
+    position: absolute;
+    width: 265px;
+    height: 315px;
+    display: grid;
+    grid-template-columns: 15% 15%;
+    justify-content: right;
+    align-items: center;
+}
+.cin{
+    height: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+}
+#c1{
+    position: relative;
+    left: 10px;
+    bottom: 59px;
+}
+
+#c2{
+    position: relative;
+    left: -210px;
+    bottom: 59px;
+
+}
+
+.c2-1{
+    height: 55%;
+    width: 6px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.461);
+    justify-content: left;
+}
+.c2-2{
+    height: 55%;
+    width: 6px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.461);
+}
+.c1-1{
+    height: 55%;
+    width: 6px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.461);
+}
+.c1-2{
+    height: 55%;
+    width: 6px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.461);
+}
+
+
+.dias, .fecha{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style-type: none;
+    gap: 3px;
+    margin: 5px;
+}
+
+li{
+    text-align: center;
+    color: #000000;
+}
+
+.dias .dias1{
+    color: rgb(243, 135, 135);
+    font-weight: 800;
+}
+
+@media (max-width: 200px){
+    .calendario{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .mes{
+        grid-template-columns: repeat(1,2fr);
+    }
+
+
+}
+
+@media (max-width: 225px){
+    #c1{
+       position: relative;
+       grid-template-columns: repeat(2,1fr);
+       left: -10px;
+       
+    }
+    
+}
+
+
+.fecha .dia{
+    color: #6363638b;
+    text-align: center;
+}
+
+.fecha .dia_1 {
+    position: relative;
+    color: #000000;
+    border: 1px solid transparent ;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.fecha .dia_1:hover{
+    background-color: rgba(53, 53, 53, 0.679);
+    color: #fffcfc;
+}

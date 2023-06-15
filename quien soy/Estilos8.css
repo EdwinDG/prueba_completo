@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    width: 100%;
+}
+
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.7em;}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;}
+ul {list-style: none;}
+li {font-size: 1.25em;}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 255, 255);
+    box-shadow: 2px 2px 10px rgba(17, 250, 250, 0.664);
+    color: white;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+button:hover {
+    background-color: rgba(0, 204, 255, 0.863);
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+.color-acento {
+    color: rgb(0, 238, 255);
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(0, 255, 234);
+    font-size: 1.6em;
+    
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+header a:hover {
+    color: rgb(0, 238, 255);
+}
+
+/* linea del rectangulo 1 */
+
+#rectangulo1 .container {
+    text-align: center;
+    padding: 200px 12px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#rectangulo1 .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+}
+
+#rectangulo1 h2 {
+    margin-top: 0px;
+}
+
+
+#rectangulo1 p{
+    color: #ffffff;
+}
+
+
+
+/* linea del rectangulo 2 */
+
+#rectangulo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,rgb(3, 213, 241),rgba(6, 255, 255, 0.274));
+}
+
+#rectangulo2 h1 {
+    color: white;
+    font-size: 5em;
+}
+
+#rectangulo2 button {
+    font-size: 1.75em;
+}
+
+#rectangulo2 .contenedor {
+    right: 30px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+
+/* linea del rectangulo 3 */
+
+#rectangulo3 {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    
+}
+
+#rectangulo3 .container {
+    padding: 150px 12px;
+    
+}
+
+#rectangulo3 h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+    color: #ffffff;
+}
+
+
+#rectangulo3 p {
+    display: none;
+    color: #ffffff;
+}
+
+#rectangulo3 .carta {
+    padding: 50px 0px;
+    margin: 10px;
+    border-radius: 15px;
+    transition: all 300ms;
+    position: relative;
+    padding: 10;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgba(50, 50, 50, 50);
+    box-shadow: 2px 2px  10px rgba(0, 0, 0, 0.5);
+    
+}
+
+#rectangulo3 .carta:hover{
+transform: scale(1.15);
+
+}
+
+@media (min-width: 64px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #rectangulo3 .programas {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #rectangulo3 p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #rectangulo3 h2 {
+        font-size: 4em;
+    }
+
+    #rectangulo3 h3 {
+        margin-top: 0;
+        color: #00eeff;
+    }
+
+
+    #rectangulo3 img{
+        position: relative;
+        border-radius: 50px;
+        background: #ffffff;
+        bottom: 50px;
+    }
+
+    
+
+}
+    
+
+
+    
