@@ -6,6 +6,7 @@ body {
   
   a {
     text-decoration: none;
+   
   }
   
   .nombre {
@@ -66,9 +67,9 @@ body {
   
   #nuestros-programas .carta {
     background-size: cover;
-    width: 15%;
-    height: 80px;
-    padding: 50px;
+    width: 25%;
+    height: 200px;
+    padding: 70px;
     margin: 30px;
     display: grid;
     position: relative;
@@ -83,7 +84,6 @@ body {
     width: 100%;
   }
   #nuestros-programas .carta:hover{
-    transform: scale(1); 
     border: 1px solid rgb(209, 94, 0);
     background: rgb(72, 72, 72);
     border-radius: 30px;
