@@ -1,124 +1,124 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  a {
-    text-decoration: none;
-   
-  }
-  
-  .nombre {
-    color: #ffffff;
-  }
-  
-  nav a {
-    font-weight: 800;
-    color: #ffffff;
-    padding-right: 20px;
-  }
-  
-  nav a:hover {
-    color: rgb(209, 94, 0);
-  }
-  
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+ 
+}
+
+.nombre {
+  color: #ffffff;
+}
+
+nav a {
+  font-weight: 800;
+  color: #ffffff;
+  padding-right: 20px;
+}
+
+nav a:hover {
+  color: rgb(0, 209, 171);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to left, #000000,  rgba(3, 228, 186, 0.866), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+  padding: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+#nuestros-programas {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background-image: 
+    url("qwt.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#nuestros-programas .programas {
+  display: flex;
+  margin-left: 5%;
+  flex-wrap: wrap;
+}
+
+#nuestros-programas .container {
+  padding: 150px 12px;
+}
+
+#nuestros-programas .carta {
+  background-size: cover;
+  width: 15%;
+  height: 100px;
+  padding: 70px;
+  margin: 30px;
+  display: grid;
+  position: relative;
+  overflow: hidden;
+}
+
+#nuestros-programas .carta img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#nuestros-programas .carta:hover{
+  border: 1px solid rgba(0, 254, 233, 0.809);
+  background: rgba(188, 187, 187, 0.633);
+  border-radius: 30px;
+}
+
+
+
+
+
+@media (max-width: 800px) {
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: linear-gradient(to left, #020F2E, rgb(0, 0, 0));
-    padding: 15px;
+    flex-direction: column;
   }
-  
-  .logo {
-    display: flex;
-    align-items: center;
+
+  nav {
+    padding: 10px;
+    margin: 10px;
   }
-  
-  .logo img {
-    height: 50px;
-    margin-right: 10px;
-  }
-  
+
   #nuestros-programas {
-    background-color: rgb(0, 0, 0);
+    height: 100%;
+  }
+
+  .nombre {
     text-align: center;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("qwe.PNG");
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
-  
+
   #nuestros-programas .programas {
-    display: flex;
-    margin-left: 5%;
-    flex-wrap: wrap;
+    justify-content: center;
   }
-  
-  #nuestros-programas .container {
-    padding: 150px 12px;
-  }
-  
-  #nuestros-programas .carta {
-    background-size: cover;
-    width: 25%;
-    height: 200px;
-    padding: 70px;
-    margin: 30px;
-    display: grid;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  #nuestros-programas .carta img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-  #nuestros-programas .carta:hover{
-    border: 1px solid rgb(209, 94, 0);
-    background: rgb(72, 72, 72);
-    border-radius: 30px;
-  }
+}
 
-  
-
-
-  
-  @media (max-width: 800px) {
-    header {
-      flex-direction: column;
-    }
-  
-    nav {
-      padding: 10px;
-      margin: 10px;
-    }
-  
-    #nuestros-programas {
-      height: 100%;
-    }
-  
-    .nombre {
-      text-align: center;
-    }
-  
-    #nuestros-programas .programas {
-      justify-content: center;
-    }
+@media (max-width: 1000px) {
+  #nuestros-programas .programas {
+    justify-content: center;
   }
-  
-  @media (max-width: 1000px) {
-    #nuestros-programas .programas {
-      justify-content: center;
-    }
-  }
+}
   
